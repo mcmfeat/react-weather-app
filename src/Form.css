@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #65b996a1;
+  --secondary-color: #f8f9fa;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  border-radius: 25px;
+  border: var(--secondary-color);
+  line-height: 25px;
+  opacity: 0.9;
+  padding-left: 10px;
+}
+
+button {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 14px;
+  line-height: 14px;
+  padding: 12px;
+  margin: 5px;
+  border-radius: 100%;
+  border: 1px solid var(--primary-color);
+  transition: all 200ms ease;
+  box-shadow: var(box-shadow);
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.507);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  form {
+    font-size: 14px;
+  }
+
+  input {
+    line-height: 14px;
+  }
+
+  button {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 8px;
+  }
+}

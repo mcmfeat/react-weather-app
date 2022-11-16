@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #65b996a1;
+  --secondary-color: #f8f9fa;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 5px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 2px rgb(119, 136, 153);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+h6 {
+  text-align: center;
+}
+
+P {
+  font-size: 18px;
+  font-style: oblique;
+}
+
+.container-app {
+  max-width: 60%;
+  border: 2px solid rgba(168, 168, 168, 0.8);
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: rgba(168, 168, 168, 0.8);
+  background-image: url(../images/day-clouds.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container-text {
+  display: block;
+  margin: 0 auto;
+}
+
+.city-choise {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+.weather-info {
+  text-align: center;
+}
+
+.sensation {
+  font-size: 15px;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 14px;
+  }
+
+  .sensation {
+    font-size: 13px;
+  }
+
+  .container-app {
+    max-width: 80%;
+  }
+}

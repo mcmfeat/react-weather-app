@@ -1,0 +1,23 @@
+.MoreInfos {
+  font-size: 14px;
+  margin: 10px 50px 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.MoreInfos a {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .MoreInfos {
+    font-size: 12px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .MoreInfos a {
+    font-size: 12px;
+  }
+}

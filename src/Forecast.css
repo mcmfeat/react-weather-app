@@ -1,0 +1,23 @@
+hr {
+  display: none;
+}
+
+.Forecast {
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+}
+
+.row {
+  margin: 5px 50px 5px 40px;
+}
+
+@media (max-width: 576px) {
+  hr {
+    display: block;
+  }
+
+  .row {
+    margin: 5px;
+  }
+}

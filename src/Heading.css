@@ -1,0 +1,49 @@
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp-number {
+  margin-right: 3px;
+}
+
+.scale {
+  font-size: 22px;
+}
+
+.scale a {
+  margin: 5px;
+  line-height: 10px;
+  vertical-align: text-top;
+}
+
+#scale-celsius {
+  margin-right: 15px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 38px;
+    padding: 10px;
+  }
+
+  img {
+    max-width: 30%;
+  }
+
+  .scale a {
+    font-size: 20px;
+    line-height: 10px;
+    vertical-align: text-top;
+    margin: 5px;
+  }
+}
