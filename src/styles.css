@@ -62,7 +62,7 @@ P {
   margin: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   p {
     font-size: 14px;
   }
@@ -72,6 +72,7 @@ P {
   }
 
   .container-app {
-    max-width: 80%;
+    max-width: 95%;
+    background-size: cover;
   }
 }

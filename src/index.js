@@ -10,13 +10,11 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <div className="App">
-      <div className="container">
         <div className="container-app">
           <div className="container-text">
             <WeatherApp />
           </div>
         </div>
       </div>
-    </div>
   </StrictMode>
 );
