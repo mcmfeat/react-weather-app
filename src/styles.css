@@ -6,7 +6,6 @@
 
 body {
   margin: 5px;
-  padding: 5px;
   font-family: "Roboto", sans-serif;
   color: var(--secondary-color);
   text-shadow: 2px 2px 2px rgb(119, 136, 153);
@@ -50,7 +49,7 @@ P {
 .city-choise {
   display: block;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .weather-info {
@@ -72,7 +71,7 @@ P {
   }
 
   .container-app {
-    max-width: 95%;
+    max-width: 80%;
     background-size: cover;
   }
 }
