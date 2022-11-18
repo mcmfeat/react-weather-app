@@ -54,6 +54,7 @@ P {
 
 .weather-info {
   text-align: center;
+  text-transform: capitalize;
 }
 
 .sensation {

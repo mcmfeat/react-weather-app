@@ -1,11 +1,11 @@
-import React from "react";
+/* import React from "react";
 
 import "./Form.css";
 
 export default function Form() {
   return (
     <div className="Form">
-      <form className="city-choise" id="search-city" autocomplete="off">
+      <form className="city-choise" id="search-city" autoComplete="off">
         <input type="text" placeholder="Choose your city" id="choose-city" />
 
         <button id="search-button">
@@ -17,4 +17,4 @@ export default function Form() {
       </form>
     </div>
   );
-}
+} */
