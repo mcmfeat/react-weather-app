@@ -52,8 +52,16 @@ P {
   padding: 10px;
 }
 
-.weather-info {
+.weatherInfo {
   text-align: center;
+}
+
+.FormattedDate {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.weatherDescription {
   text-transform: capitalize;
 }
 

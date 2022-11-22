@@ -4,7 +4,6 @@ import "./styles.css";
 import "./Form.css";
 
 import Heading from "./Heading";
-import Date from "./Date";
 import WeatherInfo from "./WeatherInfo";
 import Forecast from "./Forecast";
 import MoreInfos from "./MoreInfos";
@@ -26,7 +25,6 @@ export default function WeatherApp() {
         </form>
       </div>
       <Heading />
-      <Date />
       <WeatherInfo />
       <Forecast />
       <MoreInfos />
