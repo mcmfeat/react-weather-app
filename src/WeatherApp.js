@@ -21,7 +21,7 @@ export default function WeatherApp(props) {
       date: new Date(response.data.time * 1000),
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
-      iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon_url}.png`,
+      icon: response.data.condition.icon_url,
       wind: response.data.wind.speed,
       temperature: response.data.temperature.current,
       city: response.data.city,

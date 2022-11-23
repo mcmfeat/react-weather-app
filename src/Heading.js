@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Heading.css";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Heading(props) {
     return (
@@ -8,12 +9,12 @@ export default function Heading(props) {
         <h1>
           <div className="city">{props.data.city}</div>
           <div className="temperature">
-            <img
-              src={props.data.iconUrl}
-              alt={props.data.icon}
-              id="icon-now"
-              className="float-left"
-            />
+            <div className="float-left">
+              <WeatherIcon
+                icon={props.data.icon}
+                  size={46}
+              />
+            </div>
             <span className="temp-number" id="temp-number">
               {Math.round(props.data.temperature)}
             </span>
