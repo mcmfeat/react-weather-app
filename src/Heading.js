@@ -1,33 +1,21 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
 
 import "./Heading.css";
 
-export default function Heading() {
-  const [weatherData, setWeatherData] = useState({ ready: false });
-
-  function handleResponse(response) {
-    setWeatherData({
-      ready: true,
-      temperature: response.data.temperature.current,
-      city: response.data.city,
-    });
-  }
-
-  if (weatherData.ready) {
+export default function Heading(props) {
     return (
       <div className="Heading">
         <h1>
-          <div className="city">{weatherData.city}</div>
+          <div className="city">{props.data.city}</div>
           <div className="temperature">
-            <img
-              src="https://openweathermap.org/img/wn/01d@2x.png"
+{/*             <img
+              src=""
               alt="Clear"
               id="icon-now"
               className="float-left"
-            />
+            /> */}
             <span className="temp-number" id="temp-number">
-              {Math.round(weatherData.temperature)}
+              {Math.round(props.data.temperature)}
             </span>
             <span className="scale">
               <a href="/" id="scale-celsius">
@@ -44,12 +32,4 @@ export default function Heading() {
         </h1>
       </div>
     );
-  } else {
-    const apiKey = "4e98dbaf0a9o9f25a430tc802924d6f0";
-    let city = "Coimbra";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
-    axios.get(apiUrl).then(handleResponse);
-
-    return "Loading...";
-  }
 }

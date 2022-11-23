@@ -22,7 +22,10 @@ a:hover {
 }
 
 h6 {
-  text-align: center;
+  text-align: right;
+  margin: 0px 10px;
+  font-size: 12px;
+  opacity: 0.8;
 }
 
 P {
@@ -52,13 +55,8 @@ P {
   padding: 10px;
 }
 
-.weatherInfo {
+.WeatherInfo {
   text-align: center;
-}
-
-.FormattedDate {
-  font-size: 12px;
-  opacity: 0.8;
 }
 
 .weatherDescription {
