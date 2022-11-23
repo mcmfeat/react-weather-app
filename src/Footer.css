@@ -1,5 +1,29 @@
+:root {
+  --primary-color: #65b996a1;
+}
+
 .Footer p {
-  font-size: 12px;
+  font-size: 14px;
+  color: rgba(168, 168, 168, 0.8);
+  text-align: center;
+  margin: 0 auto;
+  display: block;
   font-style: normal;
-  padding-left: 10%;
+  max-width: 60%;
+  text-shadow: none;
+  padding: 10px;
+}
+
+.Footer a {
+  color: rgba(168, 168, 168);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 576px) {
+  .Footer p {
+    max-width: 60%;
+  }
 }

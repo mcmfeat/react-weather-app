@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.css";
 
 import WeatherApp from "./WeatherApp";
+import Footer from "./Footer";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -12,9 +13,10 @@ root.render(
     <div className="App">
       <div className="container-app">
         <div className="container-text">
-          <WeatherApp defaultCity="Coimbra"/>
+          <WeatherApp defaultCity="Coimbra" />
         </div>
       </div>
+      <Footer />
     </div>
   </StrictMode>
 );

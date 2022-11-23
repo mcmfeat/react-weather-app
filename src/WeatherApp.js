@@ -9,7 +9,7 @@ import WeatherInfo from "./WeatherInfo";
 import Forecast from "./Forecast";
 import MoreInfos from "./MoreInfos";
 import FormattedDate from "./FormattedDate";
-import Footer from "./Footer";
+
 
 export default function WeatherApp(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -21,7 +21,7 @@ export default function WeatherApp(props) {
       date: new Date(response.data.time * 1000),
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
-      //iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon_url}.png`,
+      iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon_url}.png`,
       wind: response.data.wind.speed,
       temperature: response.data.temperature.current,
       city: response.data.city,
@@ -64,9 +64,9 @@ function handleCityChange(event) {
                 id="search-button"
               ></i>
             </button>
-            <button id="current-loc" type="button">
+{/*             <button id="current-loc" type="button">
               <i className="fa-solid fa-location-dot" id="current-loc"></i>
-            </button>
+            </button> */}
           </form>
         </div>
 
@@ -77,7 +77,7 @@ function handleCityChange(event) {
         <h6>
           <FormattedDate date={weatherData.date} />
         </h6>
-        <Footer />
+
       </div>
     );
     } else {
