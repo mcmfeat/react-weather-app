@@ -10,7 +10,6 @@ import Forecast from "./Forecast";
 import MoreInfos from "./MoreInfos";
 import FormattedDate from "./FormattedDate";
 
-
 export default function WeatherApp(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
@@ -21,27 +20,27 @@ export default function WeatherApp(props) {
       date: new Date(response.data.time * 1000),
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
-      icon: response.data.condition.icon_url,
+      icon: response.data.condition.icon,
       wind: response.data.wind.speed,
       temperature: response.data.temperature.current,
       city: response.data.city,
     });
   }
 
-function search() {
+  function search() {
     const apiKey = "4e98dbaf0a9o9f25a430tc802924d6f0";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
-}
+  }
 
-function handleSubmit(event) {
-  event.preventDefault();
-search(city);
-}
+  function handleSubmit(event) {
+    event.preventDefault();
+    search(city);
+  }
 
-function handleCityChange(event) {
-  setCity(event.target.value);
-}
+  function handleCityChange(event) {
+    setCity(event.target.value);
+  }
 
   if (weatherData.ready) {
     return (
@@ -64,7 +63,7 @@ function handleCityChange(event) {
                 id="search-button"
               ></i>
             </button>
-{/*             <button id="current-loc" type="button">
+            {/*             <button id="current-loc" type="button">
               <i className="fa-solid fa-location-dot" id="current-loc"></i>
             </button> */}
           </form>
@@ -77,12 +76,10 @@ function handleCityChange(event) {
         <h6>
           <FormattedDate date={weatherData.date} />
         </h6>
-
       </div>
     );
-    } else {
-      search();
+  } else {
+    search();
     return "Loading...";
   }
 }
-
