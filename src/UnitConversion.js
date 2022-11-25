@@ -16,41 +16,31 @@ export default function UnitConversion(props) {
   }
 
   if (unit === "celsius") {
-  return (
-    <div className="UnitConversion">
-      <span className="tempNumber">
-        {Math.round(props.celsius)}
-      </span>
-      <span className="scale">
-        <span id="scale-celsius">
-          {" "}
-          ºC
+    return (
+      <div className="UnitConversion">
+        <span className="tempNumber">{Math.round(props.celsius)}</span>
+        <span className="scale">
+          <span className="scaleCelsius"> ºC</span>|
+          <a href="/" onClick={showFahrenheit} className="scaleFarenheit">
+            {" "}
+            ºF
+          </a>
         </span>
-        |
-        <a href="/" onClick={showFahrenheit} id="scale-farenheit">
-          {" "}
-          ºF
-        </a>
-      </span>
-    </div>
-  );
-} else {
-   let fahrenheit = (props.celsius * 9 / 5) + 32;
-   return (
-     <div className="UnitConversion">
-       <span className="tempNumber">{Math.round(fahrenheit)}</span>
-       <span className="scale">
-         <a href="/" onClick={showCelsius} id="scale-celsius">
-           {" "}
-           ºC
-         </a>
-         |
-         <span id="scale-farenheit">
-           {" "}
-           ºF
-         </span>
-       </span>
-     </div>
-   );
-}
+      </div>
+    );
+  } else {
+    let fahrenheit = (props.celsius * 9) / 5 + 32;
+    return (
+      <div className="UnitConversion">
+        <span className="tempNumber">{Math.round(fahrenheit)}</span>
+        <span className="scale">
+          <a href="/" onClick={showCelsius} className="scaleCelsius">
+            {" "}
+            ºC
+          </a>
+          |<span className="scaleFarenheit"> ºF</span>
+        </span>
+      </div>
+    );
+  }
 }
