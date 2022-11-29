@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
 /* import axios from "axios"; */
 
 import "./Forecast.css";
@@ -9,14 +10,16 @@ export default function Forecast() {
       <div className="container text-center">
         <div className="row">
           <div className="col-sm-3 icon">
-            <span className="material-symbols-outlined">sunny</span>
+            <span className="Forecast-icon">
+              <WeatherIcon icon={props.data.icon} size={20} />
+            </span>
           </div>
-          <div className="col-sm-3 day">Mon.</div>
-          <div className="col-sm-3 sky">Clear</div>
-          <div className="col-sm-3 tempMaxMin">30º/14º</div>
+          <div className="col-sm-3 Forecast-day">Mon.</div>
+          <div className="col-sm-3 Forecast-sky">Clear</div>
+          <div className="col-sm-3 Forecast-tempMaxMin">30º/14º</div>
         </div>
         <hr />
-        <div className="row">
+{/*         <div className="row">
           <div className="col-sm-3 icon">
             <span className="material-symbols-outlined">cloudy</span>
           </div>
@@ -50,7 +53,7 @@ export default function Forecast() {
           <div className="col-sm-3 day">Fri.</div>
           <div className="col-sm-3 sky">Partly cloudy</div>
           <div className="col-sm-3 tempMaxMin">33º/14º</div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
