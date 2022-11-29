@@ -11,7 +11,7 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <div className="App">
-      <div className="container-app">
+      <div className="containerApp">
         <div className="container-text">
           <WeatherApp defaultCity="Coimbra" />
         </div>

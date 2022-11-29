@@ -9,6 +9,7 @@ import WeatherInfo from "./WeatherInfo";
 import Forecast from "./Forecast";
 import MoreInfos from "./MoreInfos";
 import FormattedDate from "./FormattedDate";
+import BackgroundImage from "./BackgroundImage";
 
 export default function WeatherApp(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -45,6 +46,7 @@ export default function WeatherApp(props) {
   if (weatherData.ready) {
     return (
       <div className="App">
+        <BackgroundImage icon={weatherData.icon}>
         <div className="Form">
           <form
             onSubmit={handleSubmit}
@@ -76,10 +78,21 @@ export default function WeatherApp(props) {
         <h6>
           <FormattedDate date={weatherData.date} />
         </h6>
+        </BackgroundImage>
       </div>
     );
   } else {
     search();
     return "Loading...";
+/*     insert loading 
+          <div className="loading-container">
+        <RotatingLines
+          strokeColor="white"
+          strokeWidth="5"
+          animationDuration="0.75"
+          width="55"
+          visible={true}
+        />
+      </div> */
   }
 }
