@@ -19,27 +19,22 @@ h1 {
 
 .scale {
   font-size: 22px;
-}
-
-.scale a {
-  margin: 5px;
-  line-height: 10px;
+  line-height: 40px;
   vertical-align: text-top;
 }
 
-@media (max-width: 600px) {
+.scaleCelsius {
+  margin-right: 8px;
+}
+
+@media (max-width: 576px) {
   h1 {
     font-size: 38px;
   }
 
-  img {
-    max-width: 30%;
-  }
-
-  .scale a {
+  .scale {
     font-size: 20px;
-    line-height: 10px;
+    line-height: 30px;
     vertical-align: text-top;
-    margin: 5px;
   }
 }
