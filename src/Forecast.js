@@ -1,10 +1,20 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
-/* import axios from "axios"; */
+import axios from "axios";
 
 import "./Forecast.css";
 
-export default function Forecast() {
+export default function Forecast(props) {
+  function handleResponse(response) {
+    console.log(response);
+  }
+
+  const apiKey = "4e98dbaf0a9o9f25a430tc802924d6f0";
+  let city = props.data.city;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(handleResponse);
+
   return (
     <div className="Forecast">
       <div className="container text-center">
@@ -19,7 +29,7 @@ export default function Forecast() {
           <div className="col-sm-3 Forecast-tempMaxMin">30º/14º</div>
         </div>
         <hr />
-{/*         <div className="row">
+        {/*         <div className="row">
           <div className="col-sm-3 icon">
             <span className="material-symbols-outlined">cloudy</span>
           </div>
