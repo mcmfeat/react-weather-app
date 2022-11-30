@@ -9,8 +9,17 @@ hr {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.row {
-  margin: 5px 50px 5px 40px;
+.Forecast-sky:first-letter {
+  text-transform: uppercase;
+}
+
+.Forecast-temperatures {
+  white-space: nowrap;
+}
+
+.Forecast-temperature-min {
+  color: rgb(208, 209, 210);
+  margin-left: 8px;
 }
 
 @media (max-width: 576px) {
