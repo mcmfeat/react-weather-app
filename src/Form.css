@@ -26,7 +26,7 @@ button {
   border-radius: 100%;
   border: 1px solid var(--primary-color);
   transition: all 200ms ease;
-  box-shadow: var(box-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 button:hover {
