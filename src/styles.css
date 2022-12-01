@@ -5,7 +5,10 @@
 }
 
 body {
-  margin: 5px;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
   font-family: "Roboto", sans-serif;
   color: var(--secondary-color);
   text-shadow: 2px 2px 2px rgb(119, 136, 153);
