@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { RotatingLines } from "react-loader-spinner";
 
 import "./styles.css";
 import "./Form.css";
@@ -40,7 +41,6 @@ export default function WeatherApp(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      /*      coord: response.data.coordinates, */
       date: new Date(response.data.time * 1000),
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
@@ -112,16 +112,16 @@ export default function WeatherApp(props) {
     );
   } else {
     search();
-    return "Loading...";
-    /*     insert loading 
-          <div className="loading-container">
+    return (
+      <div className="loadingContainer">
         <RotatingLines
-          strokeColor="white"
+          strokeColor="grey"
           strokeWidth="5"
           animationDuration="0.75"
-          width="55"
+          width="56"
           visible={true}
         />
-      </div> */
+      </div>
+    );
   }
 }

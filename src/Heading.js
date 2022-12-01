@@ -13,7 +13,6 @@ export default function Heading(props) {
           <div className="float-left">
             <WeatherIcon icon={props.data.icon} size={46} />
           </div>
-
           <UnitConversion celsius={props.data.temperature} />
         </div>
       </h1>

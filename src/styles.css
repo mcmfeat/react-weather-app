@@ -70,6 +70,14 @@ P {
   margin: 10px;
 }
 
+.loadingContainer {
+  display: block;
+  margin: 0 auto;
+  border-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
 @media (max-width: 576px) {
   h6 {
     margin: 0px 10px 5px;
