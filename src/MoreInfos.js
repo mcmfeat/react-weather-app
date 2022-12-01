@@ -5,7 +5,7 @@ import "./MoreInfos.css";
 export default function MoreInfos() {
   return (
     <div className="MoreInfos">
-      <p className="more-infos">
+      <p>
         <a href="https://www.accuweather.com/">More infos</a>
       </p>
     </div>

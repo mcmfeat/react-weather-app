@@ -5,8 +5,8 @@ hr {
 .Forecast {
   margin: 0 auto;
   display: block;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 40px;
+  background-color: rgba(110, 110, 110, 0.1);
 }
 
 .Forecast-sky:first-letter {
@@ -22,12 +22,36 @@ hr {
   margin-left: 8px;
 }
 
+@media (max-width: 900px) {
+  .Forecast {
+  padding: 10px;
+}
+}
+
 @media (max-width: 576px) {
   hr {
     display: block;
+    padding: 0px;
+    margin: 0 auto;
   }
+
+.Forecast {
+  padding: 10px 100px;
+}
 
   .row {
     margin: 5px;
   }
+}
+
+@media (max-width: 460px) {
+  .Forecast {
+  padding: 10px 60px;
+}
+}
+
+@media (max-width: 300px) {
+  .Forecast {
+  padding: 10px 30px;
+}
 }

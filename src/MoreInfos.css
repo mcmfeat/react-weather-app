@@ -12,7 +12,7 @@
 @media (max-width: 600px) {
   .MoreInfos {
     font-size: 12px;
-    margin: 10px;
+    margin: 0px 10px;
     display: flex;
     justify-content: flex-end;
   }

@@ -71,6 +71,11 @@ P {
 }
 
 @media (max-width: 576px) {
+  h6 {
+    margin: 0px 10px 5px;
+    padding: 0px;
+  }
+
   p {
     font-size: 14px;
   }
@@ -79,7 +84,7 @@ P {
     font-size: 13px;
   }
 
-  .container-app {
+  .containerApp {
     max-width: 80%;
     background-size: cover;
   }
