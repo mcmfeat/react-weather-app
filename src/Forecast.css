@@ -15,10 +15,6 @@ hr {
   text-transform: uppercase;
 }
 
-.Forecast-temperatures {
-  white-space: nowrap;
-}
-
 .Forecast-temperature-min {
   color: rgb(208, 209, 210);
   margin-left: 8px;

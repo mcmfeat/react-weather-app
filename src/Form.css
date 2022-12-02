@@ -12,7 +12,7 @@ input {
   border-radius: 25px;
   border: var(--secondary-color);
   line-height: 25px;
-  opacity: 0.9;
+  opacity: 0.5;
   padding-left: 10px;
 }
 
