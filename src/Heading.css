@@ -30,6 +30,7 @@ h1 {
 @media (max-width: 576px) {
   h1 {
     font-size: 38px;
+    padding: 5px;
   }
 
   .scale {

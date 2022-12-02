@@ -89,10 +89,12 @@ P {
 
   p {
     font-size: 14px;
+    margin-bottom: 3px;
   }
 
   .sensation {
     font-size: 13px;
+    margin: 3px;
   }
 
   .containerApp {
